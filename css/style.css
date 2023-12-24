@@ -1,0 +1,477 @@
+@charset "UTF-8";
+
+/* style */
+#banner{position: relative;width: 100%;height: 600px;}
+#slogan{width: 100%;padding: 80px 0;}
+#introduce{padding-bottom: 80px;}
+#gallery{padding: 80px 0;background: #f5f5f7;}
+#support{padding: 80px 0;}
+
+/* banner */
+#banner .container{
+    position: relative;
+}
+#banner .slide01{
+    width: 100%;
+    height: 600px;
+    background: url(../img/banner01.jpg) no-repeat center center;
+    background-size: cover;
+}
+#banner .slide02{
+    width: 100%;
+    height: 600px;
+    background: url(../img/banner02.jpg) no-repeat center center;
+    background-size: cover;
+}
+#banner .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+}
+#banner .bannerText01{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 28px;
+}
+#banner .bannerText01 h2{
+    font-size: 70px;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff;
+}
+#banner .bannerText01 p{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+#banner .bannerText01 span{
+    display: block;
+    padding: 5px 15px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 20px;
+    background: #f98125;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.5);
+}
+#banner .bannerText02{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    /* background: #5b84c4; */
+}
+#banner .bannerText02 h2{
+    font-size: 70px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#banner .bannerText02 p{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+#banner .bannerText02 span{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 35px;
+    font-weight: 500;
+    /* line-height: 1; */
+    text-align: center;
+    color: #fff;
+    /* margin-top: 20px; */
+    background: #f98125;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.5);
+}
+#banner .bannerText02 span.blue{
+    background: #5b84c4;
+    margin-top: -5px;
+    z-index: -1;
+}
+
+/* slogan */
+#slogan .slogan{
+    text-align: center;
+}
+#slogan .slogan p{
+    font-size: 50px;
+    font-weight: 700;
+    color: #11224d;
+}
+#slogan .slogan h2{
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+}
+#slogan .slogan h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: #5b84c4;
+    z-index: -1;
+}
+
+/* introduce */
+#introduce .introduce>div{
+    float: left;
+    width: 49%;
+    box-sizing: border-box;
+}
+#introduce .introduce>div:hover span{
+    background: #11224d;
+}
+#introduce .introduce>div:hover .intBox{
+    border-color: #11224d;
+}
+#introduce .com{
+    margin-right: 2%;   
+}
+#introduce span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: #1d1d1f;
+    margin: 0 auto;
+}
+#introduce span img{
+    width: 60px;
+    margin: 0 auto;
+}
+#introduce .intBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: -40px;
+    padding: 40px 20px 20px 20px;
+    border: 1px dashed #1d1d1f;
+    word-break: keep-all;
+    text-align: center;
+}
+#introduce .intBox h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#introduce .intBox p{
+    font-size: 20px;
+}
+
+/* gallery */
+#gallery h2{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#gallery h2 a{
+    color: #11224d;;
+}
+#gallery .swiper-container2{
+    position: relative;
+    overflow: hidden;
+}
+#gallery .swiper-button-next{
+    color: #5b84c4;
+}
+#gallery .swiper-button-prev{
+    color: #5b84c4;
+}
+#gallery .swiper-pagination-bullet{
+    background: #fff;
+    opacity: 0.5;
+}
+#gallery .swiper-pagination-bullet-active{
+    background: #5b84c4;
+    opacity: 1;
+}
+#gallery .gallBox .imgBox{
+    position: relative;
+}
+#gallery .gallBox .imgBox span{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background: #11224d;
+}
+
+/* support */
+#support h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #11224d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#support .support>div{
+    float: left;
+    width: 49%;
+    height: 250px;
+}
+#support .notice{
+    margin-right: 2%;
+}
+#support .notice .noBox{
+    background: url(../img/notice.jpg) no-repeat center center;
+    background-size: cover;
+}
+#support .reference{
+    background: #11224d;
+}
+#support .supBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+#support .supBox h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#support .supBox a{
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+#support .supBox a:hover{
+    color: #11224d;
+    font-weight: 500;
+    background: #fff;
+}
+
+/* popup */
+#popup{
+    position: absolute;
+    top: 200px;
+    right: 250px;
+    z-index: 50;
+}
+#popup .popup{
+    position: relative;
+    width: 400px;
+    height: 370px;
+    background: #000;
+}
+.popup img{
+    width: 400px;
+}
+.popup .pclose{
+    font-size: 15px;
+    line-height: 1;
+    color: #fff;
+    display: block;
+    position: absolute;
+    left: 12px;
+    bottom: 7px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+/* popup_new */
+#popup_new{
+    position: absolute;
+    top: 200px;
+    right: 650px;
+    z-index: 50;
+}
+#popup_new .popup_new{
+    position: relative;
+    width: 300px;
+    height: 370px;
+    background: #000;
+}
+.popup_new img{
+    width: 300px;
+}
+.popup_new .nclose{
+    font-size: 15px;
+    line-height: 1;
+    color: #fff;
+    display: block;
+    position: absolute;
+    left: 12px;
+    bottom: 7px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+/* media query */
+/* 0 ~ 1300px */
+@media (max-width:1300px){
+    #popup{right: 28px;}
+    #popup_new{right: 428px;}
+}
+
+/* 0 ~ 1024*/
+@media (max-width:1024px){
+    #banner .bannerText01 h2{font-size: 63px;}
+    #banner .bannerText01 p{font-size: 45px;}
+    #banner .bannerText01 span{font-size: 32px;}
+    #banner .bannerText02 h2{font-size: 63px;}
+    #banner .bannerText02 p{font-size: 45px;}
+    #banner .bannerText02 span{font-size: 32px;}
+    #slogan .slogan p{font-size: 45px;}
+    #slogan .slogan h2{font-size: 45px;}
+    #introduce .intBox h2{font-size: 36px;}
+    #gallery h2{font-size: 45px;}
+    #support h2{font-size: 45px;}
+    #support .supBox h3{font-size: 36px;}
+    #popup{right: 20px;}
+    #popup_new{right: 420px;}
+}
+
+/* 960px ~ */
+@media (min-width:960px){}
+
+/* 0 ~ 960px*/
+@media (max-width:960px){
+    #banner{margin-top: 95px;height: 500px;}
+    #banner .slide01{height: 500px;}
+    #banner .bannerText01 h2{font-size: 56px;}
+    #banner .bannerText01 p{font-size: 40px;}
+    #banner .bannerText01 span{font-size: 28px;}
+    #banner .slide02{height: 500px;}
+    #banner .bannerText02 h2{font-size: 56px;}
+    #banner .bannerText02 p{font-size: 40px;}
+    #banner .bannerText02 span{font-size: 28px;}
+    #slogan{padding: 60px 0;}
+    #slogan .slogan p{font-size: 40px;}
+    #slogan .slogan h2{font-size: 40px;}
+    #introduce{padding-bottom: 60px;}
+    #introduce .intBox{height: 200px;}
+    #introduce .intBox h2{font-size: 32px;}
+    #introduce .intBox p{font-size: 18px;}
+    #gallery{padding: 60px 0;}
+    #gallery h2{font-size: 40px;margin-bottom: 45px;}
+    #gallery .gallBox .imgBox span{font-size: 18px;}
+    #support{padding: 60px 0;}
+    #support h2{font-size: 40px;margin-bottom: 45px;}
+    #support .support>div{height: 200px;}
+    #support .supBox{height: 200px;}
+    #support .supBox h3{font-size: 32px;}
+    #support .supBox a{font-size: 18px;}
+    #popup{right: 10px;}
+    #popup_new{right: 410px;}
+}
+
+/* 0 ~ 768px */
+@media (max-width:768px){
+    #banner .bannerText01 h2{font-size: 49px;}
+    #banner .bannerText01 p{font-size: 35px;}
+    #banner .bannerText01 span{font-size: 25px;}
+    #banner .bannerText02 h2{font-size: 49px;}
+    #banner .bannerText02 p{font-size: 35px;}
+    #banner .bannerText02 span{font-size: 25px;}
+    #slogan .slogan p{font-size: 35px;}
+    #slogan .slogan h2{font-size: 35px;}
+    #introduce .intBox h2{font-size: 28px;}
+    #gallery h2{font-size: 35px;}
+    #support h2{font-size: 35px;}
+    #support .supBox h3{font-size: 28px;}
+    #popup{right: 24px;}
+    #popup_new{top: 570px;right: 24px;}
+}
+
+/* 0 ~ 600px */
+@media (max-width:600px){
+    #banner{height: 400px;}
+    #banner .slide01{height: 400px;}
+    #banner .bannerText01 h2{font-size: 42px;}
+    #banner .bannerText01 p{font-size: 30px;}
+    #banner .bannerText01 span{font-size: 21px;}
+    #banner .slide02{height: 400px;}
+    #banner .bannerText02 h2{font-size: 42px;}
+    #banner .bannerText02 p{font-size: 30px;}
+    #banner .bannerText02 span{font-size: 21px;}
+    #slogan .slogan p{font-size: 30px;}
+    #slogan .slogan h2{font-size: 30px;}
+    #introduce .intBox h2{font-size: 24px;}
+    #introduce .intBox p{font-size: 16px;}
+    #gallery h2{font-size: 30px;}
+    #gallery .gallBox .imgBox span{font-size: 16px;}
+    #support{padding: 40px 0;}
+    #support h2{font-size: 30px;}
+    #support .supBox h3{font-size: 24px;}
+    #support .supBox a{font-size: 16px;}
+}
+
+/* 0 ~ 480px */
+@media (max-width:480px){
+    #banner{margin-top: 55px;}
+    #banner .bannerText01 h2{font-size: 35px;}
+    #banner .bannerText01 p{font-size: 25px;}
+    #banner .bannerText01 span{font-size: 18px;}
+    #banner .bannerText02 h2{font-size: 35px;}
+    #banner .bannerText02 p{font-size: 25px;}
+    #banner .bannerText02 span{font-size: 18px;}
+    #slogan{padding: 40px 0;}
+    #slogan .slogan p{font-size: 25px;}
+    #slogan .slogan h2{font-size: 25px;}
+    #introduce .introduce>div{width: 100%;}
+    #introduce .com{margin-right: 0;margin-bottom: 20px;}
+    #introduce .intBox h2{font-size: 20px;}
+    #introduce .intBox p{font-size: 14px;}
+    #introduce{padding-bottom: 40px;}
+    #gallery{padding: 40px 0;}
+    #gallery h2{font-size: 25px;margin-bottom: 30px;}
+    #gallery .gallBox .imgBox span{font-size: 14px;}
+    #support h2{font-size: 25px;margin-bottom: 30px;}
+    #support .supBox h3{font-size: 20px;}
+    #support .supBox a{font-size: 14px;}
+    #support .support>div{width: 100%;}
+    #support .notice{margin-right: 0;}
+    #popup{right: 16px;top: 80px;width: 300px;}
+    #popup .popup{height: 282px;width: 300px;}
+    #popup .popup img{width: 300px;}
+    #popup_new{top: 362px;right: 16px;}
+}
+
+/* 0 ~ 360px */
+@media (max-width:360px){
+    #slogan .slogan p{font-size: 20px;}
+    #banner .bannerText01 h2{font-size: 28px;}
+    #banner .bannerText01 p{font-size: 20px;}
+    #banner .bannerText01 span{font-size: 15px;}
+    #banner .bannerText02 h2{font-size: 28px;}
+    #banner .bannerText02 p{font-size: 20px;}
+    #banner .bannerText02 span{font-size: 15px;}
+    #slogan .slogan p{font-size: 25px;}
+    #slogan .slogan h2{font-size: 20px;}
+    #gallery h2{font-size: 20px;}
+    #support h2{font-size: 20px;}
+    #support .supBox h3{font-size: 16px;}
+}
